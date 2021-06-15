@@ -1,6 +1,6 @@
 import store from 'store';
 import ROUTES from '@/routes';
-import { deepClone } from '@utils/util';
+import { deepClone } from './util';
 
 export const savePermissionStore = permission => {
     //0: 无权限；1：查看权限；2：编辑权限；3：新建权限；4：删除权限；5：全权限
