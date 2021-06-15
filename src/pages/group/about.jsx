@@ -23,7 +23,7 @@ export default () => {
         if (info.file.status === 'done') {
             setLoading(false);
             setImageUrl(
-                `http://localhost:3030/uploads/${info.file.response.id}`,
+                `http://localhost:3000/${info.file.response.data.path}`,
             );
         }
     };
@@ -46,7 +46,7 @@ export default () => {
                 listType="picture-card"
                 className="avatar-uploader"
                 showUploadList={false}
-                action="http://localhost:3030/uploads"
+                action="http://localhost:3000/api/upload"
                 data={{ name: 'avatar' }}
                 onChange={handleChange}
             >
