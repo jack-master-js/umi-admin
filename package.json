@@ -13,7 +13,7 @@
     "server": "node server.js",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "pkg": "pkg .",
+    "pkg": "pkg . -t win-x64",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
